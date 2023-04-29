@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch&family=Corinthia&family=Dancing+Script&family=Gwendolyn&family=Qwitcher+Grypen&family=The+Nautigal&family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Rajdhani:wght@700&display=swap');
+*{
+    text-align: center;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+    
+body::-webkit-scrollbar-track {
+    background: #000;
+}
+    
+body::-webkit-scrollbar-thumb {
+    background-color: #ff0;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0,0); 
+}
+body{
+    background-color: black;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+#container{
+    height:8vh;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.nome{
+    color:#ffffff;
+    background-color: none;
+    font-family: 'WindSong';
+}
+.link{
+      display: flex;
+      margin:0rem 1.5rem;
+      font-style:none;
+      font-family: 'Rajdhani', sans-serif;
+      color:rgb(255, 255, 255);
+      transition: 0.5s;
+}
+  
+.link:hover{
+      color:#fff;
+      transition: 0.5s;
+}
+.navBar{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+#Home{
+    height: 100vh;
+    background: linear-gradient(351deg, #eeee00 20%, rgba(0,0,0,1) 20%, rgba(50,50,50,1) 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.tituloHome{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'WindSong';
+}
+
+
+
+
+
+
+
+
+
+
+#Historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color:  #eeee00;
+    font-family: 'Rajdhani', sans-serif;
+}
+.containerSinopse{
+    
+    display: flex;
+    flex-direction: column;
+    font-family: 'WindSong';
+    
+}
+.sinopse{
+    font-size: 1.1rem;
+    width: 300px;
+}
+.wave{
+    transform: rotate(180deg);
+}
+
+
+.js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: 1s;
+  }
+  
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+
+
+
+
+
+#Comprar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    z-index: 0;
+}
+.itemsCompra{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tituloComprar{
+    text-align: center;
+    color: #ff0;
+    text-shadow: 0em 0em 0.5em #ff0;
+    font-family: 'Rajdhani', sans-serif;
+}
+.capaDoLivro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: solid 5px;
+    border-radius: .5rem;
+    animation: c 3s alternate infinite;
+    border-radius: 15rem;
+}
+.capa{
+    height: 300px;
+    width: 500px;
+ 
+}
+.preco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-image: linear-gradient(180deg, #ffff00, #002200);
+    animation: circulo 5s alternate infinite;
+    
+}
+.tituloPreco{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+}
+.precoValor{
+    color: #000000;
+    font-size: 1.5rem;
+    font-family: 'Corinthia';
+}
+.precoBotao{
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #000;
+    border:solid 1px #fff ;
+    padding: .2rem 1rem ;
+    border-radius: .5rem;
+    transition: 1s;
+}
+.precoBotao:hover{
+    color: #ff0;
+    background-color: #000;
+    border:solid 1px #ff0 ;
+    transition: 1s;
+    cursor:pointer;
+}
+
+
+@keyframes c{
+    0%{
+        border-top-color: #000;
+        border-left-color:#000 ;
+        border-bottom-color: #000;
+        border-right-color:#ff0;
+        
+
+    }
+    50%{
+        border-top-color: #ff0;
+        border-left-color:#000 ;
+        border-bottom-color: #000;
+        border-right-color:#000;
+        
+    }
+    75%{
+        border-top-color: #000;
+        border-left-color:#ff0 ;
+        border-bottom-color: #000;
+        border-right-color:#000;
+        
+    }
+    100%{
+        border-top-color: #000;
+        border-left-color:#000 ;
+        border-bottom-color: #ff0;
+        border-right-color:#000;
+    }
+}
+@keyframes circulo {
+    0%{
+        border-radius: 57% 43% 44% 56% / 57% 63% 37% 43%;
+    }
+    50%{
+        border-radius:55% 45% 62% 38% / 39% 67% 33% 61% ;
+    }
+    100%{
+        border-radius:34% 66% 18% 82% / 62% 33% 67% 38% ;
+    }
+}
+
+
+.mouse{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    background-color: transparent;
+    height: 30px;
+    width: 10px;
+    border-radius: 1rem;
+    border:#fff solid 2px;
+    padding: .5rem;
+}
+.scrollMouse{
+    position:absolute;
+    top: 50px;
+    height: 10px;
+    width: 10px;
+    border-radius: 1rem;
+    background-color: #fff;
+    animation: miniScroll 2s ease-in-out infinite;
+}
+.hotmart{
+    position: fixed;
+    top: 90%;
+    left: 2%;
+}
+.hotmartLogo{
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+}
+
+
+@keyframes miniScroll {
+    to{
+        top: 25px;
+        opacity: 0;
+
+    }
+    from{
+        top: 0px;
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    .nome{
+        text-align: start;
+      }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .button-nav{
+        position:fixed;
+        width: 100%;
+        top: 1%;
+        left: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 2rem;
+        width: 2rem;
+        z-index: 3;
+        border-radius: 2rem;
+        padding: .25rem;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .button-nav:hover{
+        transform: rotate(180deg);
+        transition: 2s;
+    }
+    .hamburguer{
+        display: flex;
+        flex-direction: column;
+        background-color: #ff0;
+        height: 3px;
+        width: 2rem;
+        border-radius: 1rem;
+        transition: 1s;
+    }
+    .hamburguer::after{
+        content: ' ';
+        position: absolute;
+        bottom: 1.5rem;
+        background-color: #ff0;
+        height: 3px;
+        width: 2rem;
+        border-radius: 1rem;
+        transition: 1s;
+    }
+    .hamburguer::before{
+        content: ' ';
+        position: absolute;
+        top: 1.5rem;
+        background-color: #ff0;
+        height: 3px;
+        width: 2rem;
+        border-radius: 1rem;
+        transition: 1s;
+    }
+    .navBar{
+        position:fixed;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000e;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+    }
+    .fechado{
+        display: none;
+    }
+    .aberto{
+        display: flex;
+    }
+    .link{
+        margin:0rem 1.5rem;
+        font-style:none;
+        font-family: 'Poppins', sans-serif;
+        color:#ff0;
+        transition: 0.5s;
+        font-size: 2rem;
+      }
+    .menu{
+        display: block;
+        height: 5px;
+        width: 2rem;
+    }
+
+    .abrir{
+        display: flex;
+    }
+    .itemsCompra{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .capaDoLivro{
+        margin: 1rem 0rem;
+    }
+    .capaDoLivro{
+        height: 300px;
+        width: 200px;
+    }
+
+
+
+
+
+
+    .mouse{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 90%;
+        left: 90%;
+        background-color: transparent;
+        height: 30px;
+        width: 10px;
+        border-radius: 1rem;
+        border:#fff solid 2px;
+        padding: .5rem;
+    }
+}
+
+
+
+
+
+
