@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Astloch&family=Corinthia&family=Dancing+Script&family=Gwendolyn&family=Qwitcher+Grypen&family=The+Nautigal&family=WindSong&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,200;0,300;1,200&display=swap');
 *{
     text-align: center;
     margin:0;
@@ -22,6 +21,7 @@ body::-webkit-scrollbar-thumb {
 }
 body{
     background-color: black;
+    min-width: 100%;
 }
 header{
     position: fixed;
@@ -37,7 +37,8 @@ header{
 .nome{
     color:#ffffff;
     background-color: none;
-    font-family: 'WindSong';
+    font-family: 'IBM Plex Serif', serif;
+        font-weight: 200;
 }
 .link{
       display: flex;
@@ -76,9 +77,10 @@ header{
 
 }
 .tituloHome{
-    font-size: 3rem;
+    font-size: 5rem;
     color: #fff;
-    font-family: 'WindSong';
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
 }
 
 
@@ -97,18 +99,20 @@ header{
     justify-content: space-around;
     height: 100vh;
     background-color:  #eeee00;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+    border: solid #ee0 5px;
 }
 .containerSinopse{
     
     display: flex;
     flex-direction: column;
-    font-family: 'WindSong';
+    font-family: 'Dancing Script', cursive;
     
 }
 .sinopse{
     font-size: 1.1rem;
     width: 300px;
+    font-family: 'Dancing Script', cursive;
 }
 .wave{
     transform: rotate(180deg);
@@ -186,7 +190,7 @@ header{
 .precoValor{
     color: #000000;
     font-size: 1.5rem;
-    font-family: 'Corinthia';
+    font-family: 'Dancing Script', cursive;
 }
 .precoBotao{
     font-size: 1.2rem;
@@ -426,8 +430,39 @@ header{
     }
 }
 
-
-
-
-
-
+@media screen and (max-width: 460px) {
+    body {
+      width: 100%;
+      display: block;
+    }
+    .tituloHome{
+        font-size: 5rem;
+        color: #fff;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: 200;
+    }
+    .button-nav{
+        position:fixed;
+        top: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 1rem;
+        width: 1rem;
+        z-index: 3;
+        margin: 0;
+        border-radius: 2rem;
+        padding: .75rem;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .capa{
+        height: 200px;
+        width: 250px;
+     
+    }
+    .tituloComprar{
+        margin-top: 1rem;
+    }
+  }
